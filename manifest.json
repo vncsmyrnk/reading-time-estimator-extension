@@ -1,0 +1,28 @@
+{
+  "name": "Reading Time Estimator",
+  "version": "0.0.1",
+  "description": "Estimates the reading time for the current web page",
+  "manifest_version": 3,
+  "author": "Vinicius Mayrink",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "Reading Time Estimator"
+  }
+}
+

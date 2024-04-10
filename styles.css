@@ -1,0 +1,19 @@
+#end-time-count-action {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#end-time-count-action button {
+  width: 90%;
+}
